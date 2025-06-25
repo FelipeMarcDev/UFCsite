@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFC: Ultimate Fight Championship</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#"><img src="../images/ufclogo.png" alt="" class="logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="../pages/historia.html">História</a></li>
+            <li><a href="../pages/campeoes.html">Campeões</a></li>
+            <li class="dropdown">
+              <a href="#">Artes Marciais</a>
+              <ul class="submenu">
+                <li><a href="./MuayThai.html">Muay Thai</a></li>
+                <li><a href="./pages/JiuJitsu.html">Jiu Jitsu</a></li>
+                <li><a href="./pages/Boxe.html">Boxe</a></li>
+              </ul>
+            </li>
+            <li><a href="./records.html">Records</a></li>
+            <li><a href="./votacao.html">Votação: UFC 317</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Votação UFC 317</h1>
+
+        <form onsubmit="return false;">
+          <div class="fight">
+            <div class="fight-title">
+              <h4>Card Principal</h4>
+            </div>
+            <div class="fight">
+              <label
+                >Ilia Topuria vs Charles Oliveira (Cinturão dos Leves)</label
+              >
+              <div class="options">
+                <label
+                  ><input type="radio" name="fight1" value="Topuria" required />
+                  Ilia Topuria</label
+                >
+                <label
+                  ><input type="radio" name="fight1" value="Oliveira" /> Charles
+                  Oliveira</label
+                >
+              </div>
+            </div>
+            <div class="fight">
+              <label
+                >Alexandre Pantoja vs Kai Kara France (Cinturão dos
+                Moscas)</label
+              >
+              <div class="options">
+                <label
+                  ><input type="radio" name="fight2" value="Pantoja" required />
+                  Alexandre Pantoja</label
+                >
+                <label
+                  ><input type="radio" name="fight2" value="France" />Kai Kara
+                  France</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="fight">
+            <label>Beneil Dariush vs Renato Moicano(Peso-leve)</label>
+            <div class="options">
+              <label
+                ><input type="radio" name="fight3" value="Beneil" required />
+                Beneil Dariush</label
+              >
+              <label
+                ><input type="radio" name="fight3" value="Moicano" />Renato
+                Moicano</label
+              >
+            </div>
+          </div>
+
+          <div class="fight">
+            <label>Brandon Royval vs Joshua Van(Peso-mosca)</label>
+            <div class="options">
+              <label
+                ><input
+                  type="radio"
+                  name="fight4"
+                  value="Royval"
+                  required
+                />Brandon Royval</label
+              >
+              <label
+                ><input type="radio" name="fight4" value="Joshua" />Joshua
+                Van</label
+              >
+            </div>
+          </div>
+          <div class="fight">
+            <label>Payton Talbott vs Felipe Lima(Peso-Galo)</label>
+            <div class="options">
+              <label
+                ><input
+                  type="radio"
+                  name="fight5"
+                  value="Payton"
+                  required
+                />Paython Talbott</label
+              >
+              <label
+                ><input type="radio" name="fight5" value="Lima" />Felipe
+                Lima</label
+              >
+            </div>
+          </div>
+          <div class="button-container" method="#">
+            <button type="submit">Enviar Voto</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
